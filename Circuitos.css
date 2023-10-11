@@ -87,8 +87,18 @@ nav img{
    margin-bottom: 20px;
 }
 
+.transp-block {
+    background: #000 url(watermark.jpg) no-repeat;
+    width: 575px;
+    height: 335px;
+   }
+   img.transparent {
+    filter:alpha(opacity=75);
+    opacity:.75;
+   }
 
-h2{
+
+/*h2{
     font-size: xx-large;
     font-weight: bold;
     margin-bottom: 0.2rem;
