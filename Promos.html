@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_promos.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="shortcut icon" href="imagenes.html/favicon-16x16.png" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,31 +15,107 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    
-    <meta name="viewport" content="width=device-width"/>
-    <meta name="viewport" content="width=device-width, maximum-scale=2"/>
+    <script src="https://kit.fontawesome.com/2e9e3e980e.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, maximum-scale=2" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-       
-        <title>Grupo 13</title>    
+
+    <title>Grupo 13</title>
 </head>
+
 <body>
+
     <header>
-          <nav>
-            <div class="logo"><a href="index.html"><img src="./imagenes.html/android-chrome-512x512.png" alt="logo"></a></div>
+        <div id="ww_274f48db9182e" v='1.3' loc='auto'
+            a='{"t":"ticker","lang":"es","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>
+            <a href="https://sharpweather.com/es/widgets/" id="ww_274f48db9182e_u" target="_blank">Widget el tiempo</a>
+        </div>
+        <script async src="https://app2.weatherwidget.org/js/?id=ww_274f48db9182e"></script>
+
+
+        <nav>
             <div>
-            <a href="Circuitos.html">Circuitos</a>
-            <a href="Fotos.html">Fotos</a>                         
-            <a href="Promos.html">Promos</a>
+                <section class="top-nav">
+
+                    <div>
+                        <a href="index.html"><img src="imagenes/android-chrome-512x512.png" id="logo-nav"></a>
+                    </div>
+
+                    <input id="menu-toggle" type="checkbox" />
+
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'>
+                        </div>
+                    </label>
+
+                    <ul class="menu">
+                        <li><a href="quienes-somos.html">Quienes somos</a></li>
+                        <li><a href="Circuitos.html">Circuitos</a></li>
+                        <li><a href="Promos.html">Promos</a></li>
+                        <li><a href="contactanos.html" id="contactanos">Contacto</a></li>
+                        <li></li>
+                    </ul>
+                </section>
+
+          
+        </nav>
+    </header>
+    <section id="container_promos">
+         <!-- <div>
+            <p class="lugar">San Luis</p> 
+            <p class="estadia">4 noches</p> 
+            <p class="traslado">Aereos c/equipaje</p> 
+            <p class="pension">1/2 Pension</p> 
+            <p class="precio">59988</p>
+        </div>
+       -->
+    </section>
+    <footer>
+        <div class="footer-container">
+
+            <div>
+                <img src="imagenes/favicon-32x32.png" alt="logo" id="logo">
+
+                <div class=column>
+                    <h5 id="contact">CONTACTO</h5>
+                    <ul>
+                        <li>Av.Mosconi 3333, 9° A (1419)</li>
+                        <li>Buenos Aires, Argentina</li>
+                        <li>Tel: 54 11 7878 1313</li>
+                        <li>Email: grupo_13@ejemplo.com</li>
+                    </ul>
+                </div>
             </div>
 
-            <div>
-           
-            <a href="contactanos" id="contactanos">Contactanos</a> 
-            
-        </div> 
-            
-        </nav>
+            <div class="redes-container">
 
-    </header> 
+                <ul>
+                    <li><a href=" https://www.facebook.com/" class="facebook" target="_blank"><i
+                                class="fa-brands fa-facebook-f fa-xs"></i></a></li>
+                    <li><a href="https://www.instagram.com/" class="instagram" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/" class="twitter" target="_blank"><i
+                                class="fa-brands fa-x-twitter fa-xs"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+        <div class="contacto">
+            <p>Contáctate hoy mismo con nuestros expertos al +54 11 7878 1313</p>
+        </div>
+        </div>
+
+        <div class="foot">
+            <h4>&copy 2023 Grupo 13</h4>
+
+
+    </footer>
+
 </body>
+<script src="js/promos.js"></script>
 </html>

@@ -1,0 +1,38 @@
+#container_promos {
+    margin: 1rem 1rem;
+    display: grid;
+    /* grid-template-rows: 1fr; */
+    grid-template-areas:
+        'line1 line1 line1'
+        'line2 line2 line2';
+    place-items: center;
+
+}
+
+#container_promos div {
+    background:  linear-gradient(to right, #f46b45, #eea849);
+    margin-bottom:4rem;
+    width: 250px;
+    height: 300px;
+    /* background-image: url("imagenes.html/imagen\ fondo\ promos.svg"); */
+    text-align: center;
+    font-weight: 600;
+    font-size: medium;
+}
+.lugar{
+    font-size: 3rem;
+    padding:2.5rem 0 1rem;
+}
+
+/* .estadia, .pension, .traslado {
+    
+  } */
+
+.precio{
+    display: inline-block;
+    margin: 4rem 0;
+    font-size: x-large;
+    background-color: brown;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
