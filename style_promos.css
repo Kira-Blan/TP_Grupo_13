@@ -25,8 +25,8 @@
     height: 150px;
 }
 .lugar{
-    font-size: 3rem;
-    padding:2.5rem 0 1rem;
+    font-size: 2rem;
+    /*padding:2.5rem 0 1rem;*/
 }
 
 /* .estadia, .pension, .traslado {
@@ -35,7 +35,7 @@
 
 .precio{
     display: inline-block;
-    margin: 4rem 0;
+    /*margin: 4rem 0;*/
     font-size: x-large;
     background-color: brown;
     border-radius: 50%;
