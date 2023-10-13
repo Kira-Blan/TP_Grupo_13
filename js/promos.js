@@ -1,12 +1,14 @@
 var data = [
     {
-        lugar:"San Luis",
+        img: "imagenes/Merlo.jpg",
+        lugar:"Merlo",
      estadia:"4 Noches", 
      traslado:"Aereo",
      pension:"Media pensión",
      precio:59988
     },
     {
+        img: "imagenes/bariloche.jpg",
         lugar:"Bariloche",
      estadia:"5 Noches", 
      traslado: "Aereo",
@@ -14,6 +16,7 @@ var data = [
      precio:99988
     },
     {
+        img: "imagenes/chilecito-la-rioja.jpg",
         lugar:"Chilecito",
      estadia:"3 Noches", 
      traslado:"Aereo",
@@ -21,6 +24,7 @@ var data = [
      precio:75999
     },
     {
+        img: "imagenes/cataratas.jpg",
         lugar:"Cataratas",
      estadia:"3 Noches", 
      traslado:"Aereo",
@@ -28,6 +32,7 @@ var data = [
      precio:65988
     },
     {
+        img: "imagenes/mendoza.jpg",
         lugar:"Mendoza",
      estadia:"4 Noches", 
      traslado:"Aereo",
@@ -35,6 +40,7 @@ var data = [
      precio:89999
     }, 
     {
+        img: "imagenes/Jujuy2.png",
         lugar:"Jujuy",
      estadia:"6 Noches", 
      traslado:"Aereo",
@@ -48,6 +54,7 @@ var promo=[];
 if (document.getElementById("container_promos")) {
     for (let i = 0; i < data.length; i++) {
      promo += `<div>
+        <img src=${data[i].img} alt="chubut" class=img >
         <p class="lugar">${data[i].lugar}</p> 
         <p class="estadia">${data[i].estadia}</p> 
         <p class="traslado">${data[i].traslado}</p> 
