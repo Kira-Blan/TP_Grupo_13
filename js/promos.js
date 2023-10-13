@@ -52,7 +52,7 @@ if (document.getElementById("container_promos")) {
         <p class="estadia">${data[i].estadia}</p> 
         <p class="traslado">${data[i].traslado}</p> 
         <p class="pension">${data[i].pension}</p> 
-        <p class="precio">${data[i].precio}</p>
+        <p class="precio">$ ${data[i].precio}</p>
          </div>`;
     }
     document.getElementById("container_promos").innerHTML=promo;
