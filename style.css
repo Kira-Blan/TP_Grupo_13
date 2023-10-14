@@ -475,14 +475,14 @@ h4{
 }
 
 
-.footer-container{
+/*.footer-container{
     display:block;
     align-items: flex-start;
     justify-content: space-between;
     text-decoration: none;    
     margin: 0;
     padding: 5rem 5rem 0;    
-}
+}*/
 
 
 #contact{
@@ -540,46 +540,13 @@ h4{
     background: var(--twitter);
 }
 
-
-
-/*.redes{
-    display:flex;
-    /*color: black;*/
-   /* width: 7rem;
-    padding-block: 0.5rem;
-    margin-left: 1rem;
-    justify-content: space-between;
-    margin-bottom: 0%;
-    
-    
- } 
- 
- .pie-de-pag{
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
- }*/
-
-
-/*.link-column{
-    flex-direction: column;
-    text-align: center;
-    padding-inline-start: 2rem;
-}*/
-
-
-
-
 .contacto p{
-    /*display: inline;
-    padding-right: 1em;
-    padding-top: 1rem;*/
     color:black;
     text-align: right;
     margin-right: 3rem;
 }
 
-  div .foot{
+ div .foot{
     text-align: center;  
     width: 100%;
     background-color: rgb(133, 36, 36);
@@ -587,18 +554,23 @@ h4{
    }
 
 
-   .footer-container{
+ .footer-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin:5rem;
+    padding-top: 3rem;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
    }
-    .column{
+
+ .column{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    .redes-container ul{
+ .redes-container ul{
         display:flex;
     }
 
