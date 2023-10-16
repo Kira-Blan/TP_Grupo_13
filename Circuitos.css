@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #000000;
+}
+
 html {
     background-color: rgb(192, 192, 109) (189, 231, 110);
     margin: 0;
@@ -188,7 +194,7 @@ nav {
 }
 
 
-.menu a{
+.menu a {
     text-decoration: none;
     color: aliceblue;
     /*transition: rgb(172, 161, 161) 1.5s ease;*/
@@ -196,11 +202,11 @@ nav {
 }
 
 
-.menu a:hover{
+.menu a:hover {
     color: rgb(177, 11, 11);
 }
 
-a{
+a {
     font-size: 1.5em;
     font-weight: 800;
     padding-bottom: 20px;
@@ -210,93 +216,133 @@ a{
     padding: 20px;
 }
 
-.videos{
+.video {
     display: inline-block;
-}
-
-.norte {
-    display: inline-block;
-    width: 50%;
-    margin: 2rem;   
+    margin-left: 2rem;
 }
 
 
-h2{
+h2 {
     font-size: xx-large;
     text-align: center;
-    margin-top: 2rem;
     margin-bottom: 1rem;
+    background: linear-gradient(to right, #f46b45, #eea849);
+    padding: 1em;
 }
 
-.menu{
+.card-video {
+    display: inline-block;
+    border-color: #f46b45;
+    width: 90%;    
+    margin-left: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    height: auto;
+    overflow: hidden;
+    border: 3px solid #333;
+    border-radius: 20px;
+}
+
+.menu {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-.norte ol li{
-    margin-left: 3em;
-    margin-top: 1em;   
+
+.card-video ol li {
+    font-size: medium;
+
 }
 
 .norte {
     display: inline-block;
-    width: 50%;
-    margin: 2rem;   
+    width: 45%;
+    margin: 2rem;
+    justify-content: right;
+    font-size:medium;
+    font-weight: bold;
 }
 
-.sur {
+.norte ol li {
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: medium;
+}
+
+
+.sur {    
     display: inline-block;
-    width: 50%;
-    margin: 2rem;   
+    width: 45%;
+    margin: 2rem;
+    justify-content: right;
+    font-size:medium;
+    font-weight: bold;
+   
 }
 
-.sur ol li{
-    margin-left: 3em;
-    margin-top: 1em;   
+.sur ol li {
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: medium;
 }
 
-.costa {
-    display: inline-block;
-    width: 50%;
-    margin: 2rem;   
+.costa {    
+     display: inline-block;
+     width: 45%;
+     margin: 2rem;
+    justify-content: right;
+    font-size:medium;
+    font-weight: bold;
 }
 
-.costa ol li{
-    margin-left: 3em;
-    margin-top: 1em;   
+.costa ol li {
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em
+        
 }
 
-footer{   
+footer {
     background-color: brown;
     flex: content;
-    width: 100%;     
+    width: 100%;
 }
 
 
-#logo{
+#logo {
     padding: 1rem;
 }
 
 
-h4{
-    padding: 1rem;  
-    text-align: center;  
+h4 {
+    padding: 1rem;
+    text-align: center;
     width: 100%;
-    background-color: rgb(133, 36, 36);  
+    background-color: rgb(133, 36, 36);
 }
 
-  
 
-.column ul{
+.column ul {
     list-style-type: none;
     padding-bottom: 1rem;
-   
+
+}
+
+.footer-container {
+    display: block;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 0;
+    padding: 5rem 5rem 0;
 }
 
 
-#contact{
+#contact {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-weight: 700;
@@ -304,23 +350,24 @@ h4{
     justify-items: left;
 }
 
-.redes-container{
+.redes-container {
     display: block;
     text-align: right;
-    
-    
+
+
 }
 
-.redes-container ul li{
-    display:inline-block;
+.redes-container ul li {
+    display: inline-block;
     width: 50px;
-    align-items:last baseline;
+    align-items: last baseline;
     justify-items: right;
-    
+
+
 
 }
 
-.redes-container  ul li a{
+.redes-container ul li a {
     display: block;
     padding: 0 2rem 0 1rem;
     background: #333;
@@ -334,60 +381,59 @@ h4{
 }
 
 
-.redes-container ul li a:hover{
+.redes-container ul li a:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
     filter: none;
 }
 
-.redes-container ul li .facebook:hover{
+.redes-container ul li .facebook:hover {
     background: var(--facebook);
 }
-.redes-container ul li .instagram:hover{
+
+.redes-container ul li .instagram:hover {
     background: var(--instagram);
 }
 
-.redes-container ul li .twitter:hover{
+.redes-container ul li .twitter:hover {
     background: var(--twitter);
 }
 
-.contacto p{
+.contacto p {
     /*display: inline;
     padding-right: 1em;
     padding-top: 1rem;*/
-    color:black;
+    color: black;
     text-align: right;
     margin-right: 3rem;
+
 }
 
-div .foot{
-    text-align: center;  
+div .foot {
+    text-align: center;
     width: 100%;
     background-color: rgb(133, 36, 36);
     padding: 5px;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:5rem;
+    /*margin:5rem;
     padding-top: 3rem;
     padding-bottom: 1em;
     margin-bottom: 2em;
-}
-
-   
-.column{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-}
-
-.redes-container ul{
-        display:flex;
+   /*padding: 5rem 5rem 0; */
 }
 
 
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-
+.redes-container ul {
+    display: flex;
+}
