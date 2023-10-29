@@ -16,7 +16,6 @@ html {
 }
 
 header {
-
     background-color: aliceblue;
     background-size: cover;
     padding-top: 0%;
@@ -25,12 +24,6 @@ header {
     margin-bottom: 0%;
     width: auto;
 }
-
-/*body{
-    height: 100%; 
-    font-family: 'Noto Sans', sans-serif;
-    background-color:  rgb(243, 224, 184);
-}*/
 
 nav {
     display: inline-block;
@@ -51,7 +44,6 @@ nav {
     padding-top: 0%;
 }
 
-
 .top-nav {
     display: flex;
     flex-direction: row;
@@ -66,7 +58,6 @@ nav {
     padding: 1em;
 }
 
-
 .menu {
     display: flex;
     flex-direction: row;
@@ -74,7 +65,6 @@ nav {
     margin: 0;
     padding: 0;
 }
-
 
 .menu>li {
     margin: 0 1rem;
@@ -95,7 +85,6 @@ nav {
     display: none;
 }
 
-
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -106,7 +95,6 @@ nav {
     width: 30px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
     border-radius: 2px;
-
 }
 
 .menu-button::before {
@@ -117,7 +105,6 @@ nav {
 .menu-button::after {
     content: '';
     margin-top: 8px;
-
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button::before {
@@ -136,7 +123,7 @@ nav {
     transform: rotate(-405deg);
 }
 
-@media (max-width: 780px) {
+@media (max-width: 992px) {
     .menu-button-container {
         display: flex;
     }
@@ -193,14 +180,12 @@ nav {
     background-color: transparent;
 }
 
-
 .menu a {
     text-decoration: none;
     color: aliceblue;
     /*transition: rgb(172, 161, 161) 1.5s ease;*/
     font-size: 1.7rem;
 }
-
 
 .menu a:hover {
     color: rgb(177, 11, 11);
@@ -253,7 +238,6 @@ h2 {
 
 .card-video ol li {
     font-size: medium;
-
 }
 
 .norte {
@@ -272,15 +256,13 @@ h2 {
     font-size: medium;
 }
 
-
 .sur {    
     display: inline-block;
     width: 45%;
     margin: 2rem;
     justify-content: right;
     font-size:medium;
-    font-weight: bold;
-   
+    font-weight: bold;   
 }
 
 .sur ol li {
@@ -302,8 +284,7 @@ h2 {
 .costa ol li {
     margin-left: 2em;
     margin-top: 1em;
-    margin-bottom: 1.5em
-        
+    margin-bottom: 1.5em        
 }
 
 footer {
@@ -329,7 +310,6 @@ h4 {
 .column ul {
     list-style-type: none;
     padding-bottom: 1rem;
-
 }
 
 .footer-container {
@@ -340,7 +320,6 @@ h4 {
     margin: 0;
     padding: 5rem 5rem 0;
 }
-
 
 #contact {
     font-family: Arial, Helvetica, sans-serif;
@@ -353,8 +332,6 @@ h4 {
 .redes-container {
     display: block;
     text-align: right;
-
-
 }
 
 .redes-container ul li {
@@ -362,9 +339,6 @@ h4 {
     width: 50px;
     align-items: last baseline;
     justify-items: right;
-
-
-
 }
 
 .redes-container ul li a {
@@ -399,14 +373,10 @@ h4 {
     background: var(--twitter);
 }
 
-.contacto p {
-    /*display: inline;
-    padding-right: 1em;
-    padding-top: 1rem;*/
+.contacto p {    
     color: black;
     text-align: right;
     margin-right: 3rem;
-
 }
 
 div .foot {
@@ -420,13 +390,7 @@ div .foot {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /*margin:5rem;
-    padding-top: 3rem;
-    padding-bottom: 1em;
-    margin-bottom: 2em;
-   /*padding: 5rem 5rem 0; */
 }
-
 
 .column {
     display: flex;
@@ -437,3 +401,11 @@ div .foot {
 .redes-container ul {
     display: flex;
 }
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    .video iframe {
+        max-width: 80%;
+    }
+    
+}
+

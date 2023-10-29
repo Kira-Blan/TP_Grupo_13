@@ -1,23 +1,21 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;    
 }
 
-
-html{
+html {
   margin: 0;
  /*height: 100%;*/
 }
 
-
-body{
-    height: 100%; 
-    font-family: 'Noto Sans', sans-serif;
-    background-color:  rgb(243, 224, 184);
+body {
+  height: 100%; 
+  font-family: 'Noto Sans', sans-serif;
+  background-color:  rgb(243, 224, 184);
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,16 +25,13 @@ nav{
   /*position: absolute;*/ 
 }
 
-
-#logo-nav{
-  
+#logo-nav {  
   width: 4rem;
   margin-top: 0.3em;
   margin-left: 5rem;
   padding-bottom: 0%;
   padding-top: 0%;    
 }
-
 
 .top-nav {
   display: flex;
@@ -52,7 +47,6 @@ nav{
   padding: 1em;
 }
 
-
 .menu {
   display: flex;
   flex-direction: row;
@@ -61,7 +55,7 @@ nav{
   padding: 0;  
 }
 
-.menu a:hover{
+.menu a:hover {
   color: rgb(177, 11, 11) ;
 }
 
@@ -84,7 +78,6 @@ nav{
   display: none;
 }
 
-
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -94,8 +87,7 @@ nav{
   height: 4px;
   width: 30px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
- 
+  border-radius: 2px; 
 }
 
 .menu-button::before {
@@ -106,7 +98,6 @@ nav{
 .menu-button::after {
   content: '';
   margin-top: 8px;
-
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::before {
@@ -114,18 +105,16 @@ nav{
   transform: rotate(405deg);
 }
 
-
 #menu-toggle:checked + .menu-button-container .menu-button {
   background: rgba(202, 197, 197, 0);    
 }
-
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
 
-@media (max-width: 780px) {
+@media (max-width: /*780px*/992px) {
   .menu-button-container {
     display: flex;
   }
@@ -171,14 +160,14 @@ nav{
   
 }
 
-.menu a{
+.menu a {
   text-decoration: none;
   /*color: rgb(26, 25, 25);*/ color: aliceblue;
   transition: rgb(172, 161, 161) 1.5s ease;
 }
 
 
-a{
+a {
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.5em;
   font-weight: 800;
@@ -188,148 +177,141 @@ a{
   padding: 20px;
 }
  
-  .contact_form{  
-    width: 460px; 
-    height: auto;
-    margin: 80px auto;
-    border-radius: 10px;  
-    padding-top: 30px;
-    padding-bottom: 20px;  
-    background-color: #fbfbfb; 
-    padding-left: 30px; 
-  }
+.contact_form {  
+  height: auto;
+  width: 460px; 
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
   
   
-  input{
-    background-color: #fbfbfb; 
-    width: 408px; 
-    height: 40px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: goldenrod
-    margin-top 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-  }
-  
-  
-  textarea{
-    background-color: #fbfbfb; 
-    width: 405px; 
-    height: 150px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: black; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
-  }
-  
-  
-  label{
-    display: block; 
-    float: center;  
-  }
-  
-  
-  button{
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
-    text-transform: uppercase;
-    background-color: rgb(243, 190, 57);
-    border-color: goldenrod; 
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 420px;   
-    cursor: pointer;
-  }
-  
-  
-  button p{
-    color: rgb(238, 231, 212); 
-  }
-  
-  
-  span{
-    color: goldenrod; 
-  }
-  
-  
-  .aviso{
-    font-size: 13px;  
-    color: #0e0e0e;  
-  }
-  
-  
-  h1{
-    font-size: 39px;  
-    text-align: letf; 
-    padding-bottom: 20px; 
-    color: goldenrod;
-  }
-  
-  
-  h3{
-    font-size: 15px; 
-    padding-bottom: 30px;
-    color:black;   
-  }
-  
-  
-  p{
-    font-size: 14px; 
-    color: goldenrod; 
-  }
-  
-  
-  ::-webkit-input-placeholder {
-   color: #a8a8a8;
-  }
-  
-  
-  ::-webkit-textarea-placeholder {
-   color: #a8a8a8;
-  }
-  
-  
-  .formulario input:focus{
-    outline:0;
-    border: 1px solid goldenrod;
-  }
-  
-  
-  .formulario textarea:focus{
-    outline:0;
-    border: 1px solid goldenrod;
-  }
-  
-  .contacto{
-    display: inline;
-    text-align: right;
-    margin-bottom: 1rem;
-    padding-top: 1rem;
+input {
+  background-color: #fbfbfb; 
+  width: 408px; 
+   height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: goldenrod
+  margin-top 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
     
-  }
-
-  #contacto{
-    color: #0e0e0e;
-    margin-right: 2em;
-    margin-bottom: 1rem;
-  }
+textarea {
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: black; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}  
   
-   .foot{
-    text-align: center;  
-    width: 100%;
-    background-color: rgb(133, 36, 36);
-    padding: 5px;
-   }
+label {
+  display: block; 
+  float: center;  
+}  
+  
+button {
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: rgb(243, 190, 57);
+  border-color: goldenrod; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}  
+  
+button p {
+  color: rgb(238, 231, 212); 
+}  
+  
+span {
+  color: goldenrod; 
+}  
+  
+.aviso {
+  font-size: 13px;  
+  color: #0e0e0e;  
+}  
+  
+h1 {
+ font-size: 39px;  
+ text-align: letf; 
+ padding-bottom: 20px; 
+ color: goldenrod;
+}  
+  
+h3 {
+ font-size: 15px; 
+ padding-bottom: 30px;
+ color:black;   
+}  
+  
+p {
+ font-size: 14px; 
+ color: goldenrod; 
+}  
+  
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}  
+  
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}  
+  
+.formulario input:focus {
+  outline:0;
+  border: 1px solid goldenrod;
+}  
+  
+.formulario textarea:focus {
+  outline:0;
+  border: 1px solid goldenrod;
+}
+  
+.contacto {
+  display: inline;
+  text-align: right;
+  margin-bottom: 1rem;
+  padding-top: 1rem;    
+}
 
+#contacto {
+  color: #0e0e0e;
+  margin-right: 2em;
+  margin-bottom: 1rem;
+}
+  
+.foot {
+  text-align: center;  
+  width: 100%;
+  background-color: rgb(133, 36, 36);
+  padding: 5px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .top-nav {
+    width: 100%;
+  }
+#logo-nav {
+  margin-left: 1rem;
+}
 
 
 
