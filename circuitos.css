@@ -31,10 +31,12 @@ nav {
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    padding: 0
+    padding: 0;
+    /*position: absolute;*/
 }
 
 #logo-nav {
+
     width: 4rem;
     margin-top: 0.3em;
     margin-left: 5rem;
@@ -48,10 +50,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 7rem;    
-    background: linear-gradient(to left, #f46b45, #e29d3d);
+    height: 7rem;
+    background: linear-gradient(to left, #f46b45, #eea849);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #FFF;
+    color: #fff;
     /*height: 80px;*/
     padding: 1em;
 }
@@ -110,15 +112,16 @@ nav {
     transform: rotate(405deg);
 }
 
+
 #menu-toggle:checked+.menu-button-container .menu-button {
     background: rgba(202, 197, 197, 0);
 }
+
 
 #menu-toggle:checked+.menu-button-container .menu-button::after {
     margin-top: 0px;
     transform: rotate(-405deg);
 }
-
 
 @media (max-width: 992px) {
     .menu-button-container {
@@ -166,9 +169,6 @@ nav {
         border-bottom: 1px solid #444;
     }
 
-    .Jujuy {
-        position: static;
-    }
 }
 
 #contactanos {
@@ -201,241 +201,90 @@ a {
     padding: 20px;
 }
 
-.Jujuy {
-    display: flex;
-    height: auto;
-    max-width: 100%;
-    position: relative;
+.video {
+    display: inline-block;
+    margin-left: 2rem;
 }
 
-p.Jujuy {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    font-size: 5vw;
-    font-family: "Montserrat" 700;
-    text-shadow: 0.1rem 0.1rem black;
-    color: #ffffff;
-}
-
-section .lugares {
-    padding-top: 3rem;
-    padding-bottom: 0%;
-    margin-bottom: 3em;
-}
 
 h2 {
-    font-family: "Montserrat";
-    font-size: 2.5rem;
-    font-weight: 2rem;
-    margin-bottom: 1rem;
-    margin-top: 4rem;
-    margin-left: 1rem;
-}
-
-h3 {
-    font-size: 2rem;
-    font-weight: 0.5em;
+    font-size: xx-large;
     text-align: center;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #f46b45, #eea849);
+    padding: 1em;
 }
 
-.boxContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-around;
-
-    /*display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 15px;*/
-}
-
-.card {
-    width: 320px;
-    height: 320px;
-    display: grid;
-    grid-template-rows: minmax(100% 1fr);
-    grid-template-areas: "stack";
+.card-video {
+    display: inline-block;
+    border-color: #f46b45;
+    width: 90%;    
+    margin-left: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    height: auto;
     overflow: hidden;
     border: 3px solid #333;
     border-radius: 20px;
 }
 
-.card img,
-.card figcaption {
-    grid-area: stack;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card figcaption {
-    background-color: transparent;
-    transform: translate(100% - 3rem);
-    transition: transform 0.6s;
-    /*color: #b1aaaa;*/
-    text-align: center;
-    padding-top: 40%;
-}
-
-.card figcaption h5 {
-    height: 3rem;
-    font-size: 2.5rem;
-    font-weight: light;
-}
-
-.card:hover figcaption {
-    transform-style: none;
-    background-color: rgba(149, 184, 230, 0.7);
-}
-
-.circuito {
-    font-size: large;
-    font-weight: 100;
-    font-family: "Montserrat";
-}
-
-h5 {
-    font-family: "Montserrat";
-    color: transparent;
-}
-
-h5:hover {
-    color: black;
-}
-
-#carrusel-contenido {
-    flex-wrap: wrap;
-    gap: 2px;
-    margin: 0 auto;
-    overflow: hidden;
-    text-align: left;
-    width: 100%;
-    height: 15rem;
-}
-
-.imagenes {
-    height: 35vh;
-    width: auto;
-    justify-content: space-evenly;
-    margin-left: 10rem;
-}
-
-.carrusel-elemento {
-    float:left;
-    width: 33.333%;
-    height: 25vw;
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 
-@-moz-keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
-    }
+.card-video ol li {
+    font-size: medium;
 }
 
-@-webkit-keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
-    }
+.norte {
+    display: inline-block;
+    width: 45%;
+    margin: 2rem;
+    justify-content: right;
+    font-size:medium;
+    font-weight: bold;
 }
 
-@keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
-    }
+.norte ol li {
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: medium;
 }
 
+.sur {    
+    display: inline-block;
+    width: 45%;
+    margin: 2rem;
+    justify-content: right;
+    font-size:medium;
+    font-weight: bold;   
+}
 
-#carrusel-caja {
-    -moz-animation: automatizacion 15s infinite linear;
-    -o-animation: automatizacion 15s infinite linear;
-    -webkit-animation: automatizacion 15s infinite linear;
-    animation: automatizacion 15s infinite linear;
-    -webkit-transition: all 0.75s ease;
-    -moz-transition: all 0.75s ease;
-    -ms-transition: all 0.75s ease;
-    -o-transition: all 0.75s ease;
-    transition: all 0.75s ease;
-    height: /*500px;*/ 80vw;
-    width: 300%;
+.sur ol li {
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: medium;
+}
+
+.costa {    
+     display: inline-block;
+     width: 45%;
+     margin: 2rem;
+    justify-content: right;
+    font-size:medium;
+    font-weight: bold;
+}
+
+.costa ol li {
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em        
 }
 
 footer {
@@ -444,9 +293,11 @@ footer {
     width: 100%;
 }
 
+
 #logo {
     padding: 1rem;
 }
+
 
 h4 {
     padding: 1rem;
@@ -455,9 +306,19 @@ h4 {
     background-color: rgb(133, 36, 36);
 }
 
+
 .column ul {
     list-style-type: none;
     padding-bottom: 1rem;
+}
+
+.footer-container {
+    display: block;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 0;
+    padding: 5rem 5rem 0;
 }
 
 #contact {
@@ -493,6 +354,7 @@ h4 {
     transition: .2s;
 }
 
+
 .redes-container ul li a:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
@@ -511,7 +373,7 @@ h4 {
     background: var(--twitter);
 }
 
-.contacto p {
+.contacto p {    
     color: black;
     text-align: right;
     margin-right: 3rem;
@@ -528,10 +390,6 @@ div .foot {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 5rem;
-    padding-top: 3rem;
-    padding-bottom: 1em;
-    margin-bottom: 2em;
 }
 
 .column {
@@ -544,48 +402,10 @@ div .foot {
     display: flex;
 }
 
-
-@media screen and (max-width:767px) {
-
-    p .Jujuy {
-        font-size: 2.3rem;
-        left: 10%;
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    .video iframe {
+        max-width: 80%;
     }
     
-    .carrusel-elemento {
-        height: 10em;
-        width: auto;       
-    }
-
-    .imagenes {
-        margin: 0;
-        height: 8rem;
-        width: auto;
-    }
-
-    #carrusel-caja {
-        padding-bottom: 0;
-        margin-bottom: 0;
-        height: 10rem;
-    }
-
-    div#carrusel-contenido{
-max-height: 8rem;
-    }
-
-    .footer-container {
-        margin-top: 0%;
-    }
-
 }
 
-@media screen and (min-width: 400px) and (max-width: 720) {
-
-    p .Jujuy {
-        font-size: auto;
-        text-align: center;
-        text-wrap: nowrap;
-        margin-top: 10rem;
-    }
-
-}
